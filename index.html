@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>UX Primer</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style>
+
+			@font-face {
+			  font-family: 'Proxima Nova Light';
+			  src: url("custom/proxima-nova-light.otf"); 
+			}
+
+			#custom h1, #custom h2, #custom h3, #custom h4 {
+				font-family: 'Proxima Nova Light';
+			}
+
+			#custom .controls div.navigate-right, #custom .controls div.navigate-right.enabled {
+				border-left-color: #00add8;
+			}
+			#custom .controls div.navigate-left, #custom .controls div.navigate-left.enabled {
+				border-right-color: #00add8;
+			}
+			#custom .controls div.navigate-up, #custom .controls div.navigate-up.enabled {
+				border-bottom-color: #00add8;
+			}
+			#custom .controls div.navigate-down, #custom .controls div.navigate-down.enabled {
+				border-top-color: #00add8;
+			}
+			#custom .progress span {
+				background-color: #00add8;
+			}
+			#custom .blue {
+				color: #00add8;
+			}
+
+			#custom section img {
+				border: 1px solid #eeeeee;
+			}
+
+			#custom section img.nodeco {
+				background: none no-repeat 0 0 scroll transparent;
+				border: 0 none;
+			}
+
+			#custom .left {
+				text-align: left;
+			}
+
+			#custom .column {
+				display: inline-block;
+			}
+
+			#custom .column + .column {
+				margin-left: 60px;
+			}
+
+			#custom .column small {
+				display: block;
+				position: relative;
+				left: 30px;
+			}
+		</style>
+	</head>
+
+	<body id="custom">
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>UX Primer</h1>
+				</section>
+
+				<section>
+					<section>
+						<img src="custom/ux-cereal-product.jpg" />
+					</section>
+					<section>
+						<img src="custom/ux-cereal-ui.jpg" />
+					</section>
+					<section>
+						<img src="custom/ux-cereal-server.jpg" />
+					</section>
+					<section>
+						<img src="custom/ux-cereal-ux.jpg" />
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Why UX?</h2>
+					</section>
+					<section>
+						<h2>1 : 10 : 100</h2>
+						<small>- IBM</small>
+					</section>
+					<section class="left">
+						<p><span class="blue">AT&amp;T</span> - Saved $2.5 million in training by improving UX of one product</p>
+						<p><span class="blue">McAfee</span> - UI redesign saved 90% support costs</p>
+						<p><span class="blue">IBM</span> - Redesigned internal tool, saved $6.8 million in one year</p>
+						<p><span class="blue">Microsoft</span> - Online registration UX change saved $475,000 each month</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>UCD Process</h2>
+						<img class="nodeco" width="500" src="custom/ucd-process.png" />
+					</section>
+					<section>
+						<span class="column">
+							<div>
+								<img class="nodeco" width="150" src="custom/ucd-research.png" />
+							</div>
+								<small class="left">- Personas</small>
+								<small class="left">- User Stories</small>
+								<small class="left">- Market Research</small>
+								<small class="left">- User Journeys</small>
+						</span>
+						<span class="column">
+							<div>
+								<img class="nodeco" width="150" src="custom/ucd-design.png" />
+							</div>
+								<small class="left">- Brainstorms</small>
+								<small class="left">- Sketches</small>
+								<small class="left">- Wireframes</small>
+								<small class="left">- Style Tiles</small>
+						</span>
+						<span class="column">
+							<div>
+								<img class="nodeco" width="150" src="custom/ucd-prototype.png" />
+							</div>
+								<small class="left">- Paper</small>
+								<small class="left">- Interactive</small>
+								<small class="left">- Web</small>
+								<small class="left">- Analytics</small>
+						</span>
+						<span class="column">
+							<div>
+								<img class="nodeco" width="150" src="custom/ucd-test.png" />
+							</div>
+								<small class="left">- Focus Groups</small>
+								<small class="left">- Usability</small>
+								<small class="left">- A/B</small>
+								<small class="left">- Observation</small>
+						</span>
+					</section>
+				</section>
+
+				<section>
+					<h2>UX + Agile</h2>
+					<img class="nodeco" src="custom/ux-agile-process.png" />
+				</section>
+
+				<section>
+					<section>
+						<h2>So let's not design experiences like...</h2>
+					</section>
+					<section>
+						<img width="500" src="custom/baseball-pillar.jpg" />
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
