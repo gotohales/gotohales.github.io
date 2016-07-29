@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your Invitation</title>
+	<meta name="robots" content="noindex">
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+<body>
+	<div class="container">
+		<img src="hogwarts-web.jpg" alt="" />
+		<label for="toggle-1"><img class="hover" src="hogwarts-web-hover.jpg" alt="" /></label>
+		<input type="checkbox" id="toggle-1">
+		<div class="letter">
+			<div class="letter-inner">
+				<p class="m-bot hogwarts center">HOGWARTS SCHOOL of WITCHCRAFT and WIZARDRY</p>
+
+				<p class="m-bot center">Headmaster: Albus Dumbledor
+					(Order of Merlin, First Class, Grand Sorc. Chf. Warlock,
+					Supreme Mugwump, International Confec. Of Wizards)</p>
+
+				<p class="name">To Whom This May Concern,</p>
+
+				<p>We are pleased to inform you that you have been accepted at Hogwarts School of Witchcraft
+					and Wizardry for Bennett's birthday. A training video will be presented for those who would
+					like to attend beforehand (4 p.m.) Please note <b>absolute silence is required</b> so others watching
+					may glean the information they desire. If you do not wish to enjoy the training video, <b>school
+					will begin at 6:30 p.m.</b> Please arrive on time, tardiness is not acceptable. Please find enclosed
+					a list of all necessary books and equipment. Term begins on <b>5 August</b> and will <b>end at 8:30</b> that
+					same day. We await your owl by no later than 1 August. Presents not required.</p>
+
+				<p>Yours sincerely,</p>
+
+				<p class="sig">Minerva McGonagall</p>
+
+				<p>Minerva McGonagall<br />
+				Deputy Headmistress</p>
+
+				<hr>
+
+				<p class="m-bot hogwarts center">HOGWARTS SCHOOL of WITCHCRAFT and WIZARDRY</p>
+
+				<p>Uniform</p>
+
+				<p>First-year students will require: <br />
+				1. Plain work robe (black) - black T shirt is sufficient or anything else they like :) </p>
+
+				<p>Course Books</p>
+
+				<p>All students will receive a copy of the following upon arriving at Hogwarts for their Charms class: <br />
+					The Standard Book of Spells (Grade 1) Cliff Notes <br />
+					By Miranda Goshawk, Edited my Hermioneminime</p>
+
+				<p>Other Equipment</p>
+
+				<p>
+					Due to Olivander's shop having closed for a short holiday, Olivander has agreed to come and
+					present wands at Hogwarts this year. <br />
+					Students may also bring, if they desire, an owl, OR a cat Or a toad <b>(of the stuffed variety.)</b>
+				</p>
+
+				<p class="center">Parents are reminded that first years <br />
+					are not allowed their own broomstick</p>
+
+				<p>Yours sincerely,</p>
+
+				<p class="sig">Lucinda Thomsonicle-Pocus</p>
+
+				<p>Lucinda Thomsonicle-Pocus <br />
+					Chief Attendant of Witchcraft Provisions</p>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function() {
+
+			var getUrlParameter = function getUrlParameter(sParam) {
+				var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+					sURLVariables = sPageURL.split('&'),
+					sParameterName,
+					i;
+
+				for (i = 0; i < sURLVariables.length; i++) {
+					sParameterName = sURLVariables[i].split('=');
+
+					if (sParameterName[0] === sParam) {
+						return sParameterName[1] === undefined ? true : sParameterName[1];
+					}
+				}
+			};
+
+			var name = getUrlParameter('name');
+			if (name)
+				$(".name").text("Dear " + name + ",");
+
+		});
+	</script>
+</body>
+</html>
